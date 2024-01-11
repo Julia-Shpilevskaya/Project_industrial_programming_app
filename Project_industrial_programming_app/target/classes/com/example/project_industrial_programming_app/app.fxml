@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="452.0" style="-fx-background-color: FFDAB9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_industrial_programming_app.Controller">
+   <children>
+      <AnchorPane prefHeight="67.0" prefWidth="452.0" style="-fx-background-color: F4A460;">
+         <children>
+            <Label layoutX="132.0" layoutY="8.0" prefHeight="50.0" prefWidth="188.0" text="Working with files" textAlignment="CENTER">
+               <font>
+                  <Font name="Book Antiqua" size="22.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.9621212112181114">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.6736842393875122" green="0.22664067149162292" blue="0.0499025359749794" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Text fill="#6b0808" layoutX="5.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose all options" wrappingWidth="167.73675537109375">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#4b2a02" layoutX="131.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="input file" wrappingWidth="82.93673706054688">
+         <font>
+            <Font name="Sitka Text" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#4b2a02" layoutX="304.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="output file">
+         <font>
+            <Font name="Sitka Text" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="end_button" layoutX="194.0" layoutY="335.0" mnemonicParsing="false" onAction="#work_with_input_file" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: FFF5EE;" text="OK" textFill="TOMATO" />
+      <RadioButton fx:id="archived" layoutX="100.0" layoutY="218.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="83.0" text="archived" />
+      <RadioButton fx:id="encrypted" layoutX="100.0" layoutY="291.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="83.0" text="encrypted" />
+      <RadioButton fx:id="archive" layoutX="299.0" layoutY="218.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="72.0" text="archive" />
+      <RadioButton fx:id="encrypt" layoutX="304.0" layoutY="291.0" mnemonicParsing="false" text="encrypt" />
+      <Text layoutX="11.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter filename" wrappingWidth="82.93673706054688" />
+      <TextField fx:id="filename_input" layoutX="108.0" layoutY="175.0" />
+      <TextField fx:id="filename_output" layoutX="283.0" layoutY="175.0" />
+      <Text layoutX="5.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter zip filename" />
+      <TextField fx:id="zip_in" layoutX="108.0" layoutY="248.0" />
+      <TextField fx:id="zip_out" layoutX="283.0" layoutY="248.0" />
+      <ChoiceBox fx:id="format_in" layoutX="107.0" layoutY="139.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="format_out" layoutX="282.0" layoutY="139.0" prefWidth="150.0" />
+      <Text layoutX="13.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose format" />
+      <Text layoutX="30.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>
